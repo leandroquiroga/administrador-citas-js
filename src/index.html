@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Administracion de clientes</title>
+      <link rel="shortcut icon" href="./assets/svg/cita.svg" type="image/x-icon">
+      <!-- CSS -->
+      <link rel="stylesheet" href="./css/index.css">
+      <!-- Bootstrap CSS-->
+      <link href="./../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+      <!-- Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="container content mx-auto">
+      <section class="row justify-content-center align-content-center main">
+          <article class="title text-center">
+              <h1 class="text-white text-h1">Administracion de Citas </h1>
+          </article>
+          <article class="card-content">
+              <!-- Datos del Cliente -->
+              <div class="dataCliente col-12 p-1">
+                <h3 class="text-dark text-center text-h3">Datos del Cliente</h3>
+                  <form class="row g-3 p-2 w-100" id="formUser">
+                      <div class="col-md-6">
+                          <label for="inputName" class="form-label">Nombres :</label>
+                          <input type="text" class="form-control"  autocomplete='off' name="name" id="inputName" placeholder="Ingrese su nombre completo...">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputLastName" class="form-label">Apellidos: </label>
+                          <input type="text" class="form-control"  autocomplete='off' name="lastname" id="inputLastName" placeholder="Ingrese su apellido completo...">
+                        </div>
+                      <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control"  autocomplete='off' name="email" id="inputEmail4" placeholder="example@correo.com">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputTel4" class="form-label">Telefóno</label>
+                          <input type="tel" class="form-control"  autocomplete='off' minlength="8" maxlength="8" name="phone" id="inputTel4" placeholder="Coloque su numero sin el 15">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputAddress" class="form-label">Dirección</label>
+                          <input type="text" class="form-control"  autocomplete='off' name="address" id="inputAddress" placeholder="Av. Calchaqui 2536">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Ciudad</label>
+                          <input type="text" class="form-control"  autocomplete='off' name="city" id="inputCity" placeholder="Quilmes Oeste">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputDate" class="form-label">Fecha: </label>
+                          <input type="date" class="form-control"  autocomplete='off' name="date" id="inputDate">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputTime" class="form-label">Hora: </label>
+                          <input type="time" class="form-control"  autocomplete='off' name="time" min="09:00" max="18:00" value="09:00" step="1800" id="inputTime">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputTextArea" class="form-label">Descripcion </label>
+                          <textarea class="form-control"  name="description" id="inputTextArea" rows="3"></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-content-center"  >
+                          <button type="submit" class="w-100 btn btn-dark text-uppercase" id="btn-submit">Crear cita</button>
+                        </div>
+                  </form>
+              </div>
+
+              <!-- Datos del Servicio-->
+              <div class="dataService col-12 p-1 my-1 ">
+                  <div class="title">
+                    <h3 class="text-dark text-center text-h3">Datos del Servicio</h3>
+                  </div>
+                  <div class="row">
+                      <!-- Se crean las cartas dinamicamentes -->
+                      <ul id="card-cita" class="card-service"></ul>
+                      <div class="no-task d-flex row justify-content-center align-center oculto">
+                        <img src="./../src/assets/svg/undraw_yoga_248n.svg" class="img-svg animation-in-fwd" alt="no citas">
+                        <p class="text-center title-img">No hay citas disponibles</p>
+                      </div>
+                  </div> 
+              </div>
+
+            </article>
+            <!-- Modal -->
+            <div class="modal fade" id="modal"  tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header row border-bottom-0 justify-content-center align-content-center">
+                    <div class="d-flex justify-content-around align-content-center">
+                      <h5 class="modal-title" id="modal-label"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" delay="1" colors="primary:#c71f16,secondary:#c71f16" stroke="45" style="width:100px;height:100px"></lord-icon>
+                  </div>
+                  <div class="modal-body row justify-content-center align-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      <script src="./js/index.js"></script>
+      <!-- Icon Iodicon -->
+      <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>  
+      <!-- Bootstrap JS-->
+      <script src="./../node_modules/popper.js/dist/umd/popper.js"></script>
+      <script src="./../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
