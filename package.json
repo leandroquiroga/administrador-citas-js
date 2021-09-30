@@ -1,0 +1,29 @@
+{
+  "name": "administracion-clientes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html src/js/index.js src/css/index.css src/assets/* ",
+    "pro": "parcel build src/index.html src/js/index.js src/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandroquiroga/administrador-citas-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandroquiroga/administrador-citas-js/issues"
+  },
+  "homepage": "https://github.com/leandroquiroga/administrador-citas-js#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "@types/popper.js": "^1.11.0",
+    "bootstrap": "^5.1.1"
+  }
+}
