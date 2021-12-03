@@ -1,6 +1,11 @@
 # Administrador de Citas con IndexdDB   
 Esta aplicación esta construida con la intención de simular un programa que controla citas personalizadas. Todas las citas se guardan en una Base de datos en este caso se uso IndexdDB que simula un CRUD basico. 
 
+# Dektop  🖥 
+![Validator](https://user-images.githubusercontent.com/80013958/135516753-78a37778-778a-4b28-8b03-dc59627643d0.gif)
+
+# Mobile 📱
+![mobile](https://user-images.githubusercontent.com/80013958/135516932-e0d05d52-c0c0-4c8d-b8f3-99074f5e4afa.gif)
 
 # Construido con 🛠️
 * HTML5
@@ -26,6 +31,9 @@ Para mas informacion: 🧾 [Documentacion de Parcel](https://es.parceljs.org/get
 Este formulario cuenta con validacion desde expresiones regulares en 
 todos los campos excepto los de fecha y hora. Por ejemplo si en el campo donde nos pide el nombre ponemos numeros nos mostrara un error y hasta que no lo completemos de manera correcta no desaparece
 
+## Validacion Incorrecta 
+![Error](https://user-images.githubusercontent.com/80013958/135517045-0b726d77-a3a7-4ad7-bc5e-2b934958b803.gif)
+
 ## Crear Cita 
 Para crear un cita primero debemos pasar la validacion de todos los campos del formulario. Un vez compleado el formulario se habilata el boton para crear una nueva cita 
 
@@ -44,6 +52,9 @@ La eleccion de las fechas hay que tener en cuenta 2 puntos:
     * Si estamos transcurriendo el dia 29 y queremos elegir dias del proximo mes, no vamos a poder. 
 
 Con los horarios pasa algo similar en este caso vamos a poder elegir en un rango entre las 09:00hs a 18:00hs con un intervalo de 1600 segundos.
+
+## Deploy 👨‍💻
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91bdc6d2-70d1-4734-947e-a9e15e487bd1/deploy-status)]https://admitratetucita.netlify.app/)
 
 ## Posibles mejoras 🚀
 * Conectarlo a una base de datos real
