@@ -1,29 +1,36 @@
 {
   "name": "administracion-clientes-app",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2v",
+  "description": "Administrador de citas",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html src/js/index.js src/css/index.css src/assets/* ",
-    "pro": "parcel build src/index.html src/js/index.js src/css/index.css"
+    "dev": "parcel src/index.html ",
+    "pro": "parcel build src/index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leandroquiroga/administrador-citas-js.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Leandro Quiroga",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leandroquiroga/administrador-citas-js/issues"
   },
   "homepage": "https://github.com/leandroquiroga/administrador-citas-js#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^27.4.3",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "@popperjs/core": "^2.10.1",
+    "@babel/parser": "^7.16.4",
+    "@popperjs/core": "^2.11.0",
     "@types/popper.js": "^1.11.0",
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.3"
   }
 }
