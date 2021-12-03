@@ -1,0 +1,52 @@
+{
+    "name": "Administrador de Citas",
+    "short_name": "AdC",
+    "id": "./index.html",
+    "start_url" : "./index.html",
+    "display" : "standalone",
+    "background_color": "#041872",
+    "theme_color": "#202020",
+    "orentation": "portrait", 
+    "icons": [
+        {
+          "src": "./assets/img/cita-72x72.png",
+          "type": "image/png",
+          "sizes": "72x72"
+        },
+        {
+          "src": "./assets/img/cita-120x120.png",
+          "type": "image/png",
+          "sizes": "120x120"
+        },
+        {
+          "src": "./assets/img/cita-128x128.png",
+          "type": "image/png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "./assets/img/cita-144x144.png",
+          "type": "image/png",
+          "sizes": "144x144"
+        },
+        {
+          "src": "./assets/img/cita-152x152.png",
+          "type": "image/png",
+          "sizes": "152x152"
+        },
+        {
+          "src": "./assets/img/cita-196x196.png",
+          "type": "image/png",
+          "sizes": "196x196"
+        },
+        {
+          "src": "./assets/img/cita-256x256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "./assets/img/cita-512x512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+}
