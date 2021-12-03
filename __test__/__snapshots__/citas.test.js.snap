@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Dating Classes Add a new appointment 1`] = `
+Citas {
+  "_citas": Array [
+    Object {
+      "address": "Lisandro de la torre 2514",
+      "city": "Quilmes Oeste",
+      "date": "3/12/2021",
+      "description": "Depilacion",
+      "email": "leandro@correo.com",
+      "id": 1638503756758,
+      "lastname": "Quiroga",
+      "name": "Leandro Emanuel ",
+      "phone": "1540253610",
+      "time": "13:30",
+    },
+  ],
+}
+`;
+
+exports[`Check Dating Classes Delete a appointment 1`] = `
+Citas {
+  "_citas": Array [],
+}
+`;
+
+exports[`Check Dating Classes Edit a appointment 1`] = `
+Citas {
+  "_citas": Array [
+    Object {
+      "address": "Lisandro de la torre 2514",
+      "city": "Quilmes Oeste",
+      "date": "3/12/2021",
+      "description": "Depilacion",
+      "email": "leandro@correo.com",
+      "id": 1638503756758,
+      "lastname": "Quiroga",
+      "name": "Leandro Emanuel ",
+      "phone": "1540253610",
+      "time": "15:30",
+    },
+  ],
+}
+`;
