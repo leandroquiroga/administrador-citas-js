@@ -1,5 +1,6 @@
-import { administrarCitas, expRegEmail, expRegNum, expRegText, ui, expRegDir } from './../index.js';
+import { expRegEmail, expRegNum, expRegText, ui, expRegDir } from './../index.js';
 import { DB } from './../database/dataDB.js';
+import moment from 'moment';
 
 // Funciones globales
 
@@ -15,6 +16,12 @@ export const citaObj = {
     date: '',
     time: '',
     description: '',
+}
+
+export const dayCurrent = () => {
+    let inputDateMin = selector('#inputDate');
+    const dayCurrent = moment().date();
+    inputDateMin.min = dayCurrent ;
 }
 // Evalua si son letras lo que se esta ingreando 
 export const isText = (value) => {
@@ -44,11 +51,6 @@ export const isAddress = (dir) => {
         return true
     }
     return false
-}
-// Calcula la fecha actual para colocarlo en input[type='date']
-export const valueDateNow = (inputTime) => {
-    let data = new Date();
-    inputTime.min = data.getUTCDate()
 }
 // Habilita el boton de enviar si cumple con las las validaciones y los campos no estan vacios
 export const formComplete = () => {
@@ -107,5 +109,4 @@ export const deleteCard = (id) => {
     transaction.oncomplete = () => {
         ui.mostrarCitas()
     }
-    // administrarCitas.eliminarCita(id);
 }
