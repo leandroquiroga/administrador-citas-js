@@ -4,6 +4,10 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="Description" content="PWA JS.">
+      <meta name="author" content="Leandro Quiroga">
+      <meta name="description" content="Aplicacion de Administracion de Citas con IndexdDB">
+      <meta name="keywords" content="app citas administracion crud IndexdDB javascript">
       <title>Administracion de clientes</title>
       <link rel="shortcut icon" href="./assets/svg/cita.svg" type="image/x-icon">
       <link rel="manifest" href="./manifest.webmanifest">
@@ -15,6 +19,10 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" href="./assets/img/cita-72x72.png">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="theme-color" content="#202020">
   </head>
   <body class="container content mx-auto">
       <section class="row justify-content-center align-content-center main">
@@ -24,7 +32,7 @@
           <article class="card-content">
               <!-- Datos del Cliente -->
               <div class="dataCliente col-12 p-1">
-                <h3 class="text-dark text-center text-h3">Datos del Cliente</h3>
+                <h2 class="text-dark text-center text-h3">Datos del Cliente</h2>
                   <form class="row g-3 p-2 w-100" id="formUser">
                       <div class="col-md-6">
                           <label for="inputName" class="form-label">Nombres :</label>
@@ -71,7 +79,7 @@
               <!-- Datos del Servicio-->
               <div class="dataService col-12 p-1 my-1 ">
                   <div class="title">
-                    <h3 class="text-dark text-center text-h3">Datos del Servicio</h3>
+                    <h2 class="text-dark text-center text-h3">Datos del Servicio</h2>
                   </div>
                   <div class="row">
                       <!-- Se crean las cartas dinamicamentes -->
