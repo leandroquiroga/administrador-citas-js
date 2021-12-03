@@ -1,5 +1,3 @@
-// import {} from './../dist'
-
 const cacheName = 'adc_v1'
 const filesStatic = [
     '/',
@@ -20,8 +18,6 @@ const filesStatic = [
 const initServiceWorkers = () => {
     // install
     self.addEventListener('install', (e) => {
-        console.log('Instalado el servirce workers', e);
-
         e.waitUntil(
             caches.open(cacheName)
                 .then(cache => {
@@ -33,7 +29,6 @@ const initServiceWorkers = () => {
 
     // active
     self.addEventListener('activate', (e) => {
-        console.log('Activado el servirce workers', e);
         e.waitUntil(
             caches.keys()
             .then(keys => {
