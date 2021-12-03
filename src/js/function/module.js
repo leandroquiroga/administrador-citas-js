@@ -1,5 +1,5 @@
-import { administrarCitas, expRegEmail, expRegNum, expRegText, ui, expRegDir } from './../index';
-import { DB } from './../database/dataDB';
+import { administrarCitas, expRegEmail, expRegNum, expRegText, ui, expRegDir } from './../index.js';
+import { DB } from './../database/dataDB.js';
 
 // Funciones globales
 
