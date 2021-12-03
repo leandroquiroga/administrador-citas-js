@@ -1,7 +1,7 @@
 import { Citas } from "./class/citas.js";
 import { Ui} from "./class/UI.js";
 import {citaObj, formComplete, isEmail, isNumbers, isText, resetObjCita, selector, valueDateNow,isAddress } from "./function/module.js";
-import { createDB, DB } from './database/dataDB';
+import { createDB, DB } from './database/dataDB.js';
 
 // Variables globales
 let form = selector('#formUser');
@@ -163,7 +163,7 @@ const listener = (name, lastname, email, tel, address, city, date, time, descrip
     form.addEventListener('submit', nuevaCita)
 }
 
-const initApp = () => {
+export const initApp = () => {
     document.addEventListener('DOMContentLoaded', () => {
         createDB(DB)
         valueDateNow(dateForm);
@@ -171,5 +171,3 @@ const initApp = () => {
     })
     listener(nameForm,nameLastForm,emailForm,telForm,dirForm,cityForm,dateForm,timeForm,descripForm, form)
 }
-
-initApp()
