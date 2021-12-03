@@ -1,6 +1,5 @@
 export let DB;
 import { ui } from './../index';
-import { selector } from './../function/module';
 
 export const createDB = () => {
     const dataBase = window.indexedDB.open('citas', 1);
