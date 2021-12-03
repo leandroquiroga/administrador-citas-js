@@ -54,7 +54,7 @@ La eleccion de las fechas hay que tener en cuenta 2 puntos:
 Con los horarios pasa algo similar en este caso vamos a poder elegir en un rango entre las 09:00hs a 18:00hs con un intervalo de 1600 segundos.
 
 ## Deploy 👨‍💻
-[![Netlify Status](https://api.netlify.com/api/v1/badges/91bdc6d2-70d1-4734-947e-a9e15e487bd1/deploy-status)]https://admitratetucita.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91bdc6d2-70d1-4734-947e-a9e15e487bd1/deploy-status)]https://administrarcitas.netlify.app/)
 
 ## Posibles mejoras 🚀
 * Conectarlo a una base de datos real
