@@ -1,5 +1,7 @@
 import { initApp } from './js/index';
 import './css/index.css'
+import { createDB, DB } from './js/database/dataDB';
+import { dayCurrent } from './js/function/module';
 
 const serviceworkers = () => {
     if ('serviceWorker' in navigator) {
@@ -8,10 +10,11 @@ const serviceworkers = () => {
             .catch(error => console.log(error))
         return
     }
-    console.log('Service Workers no regitrado')
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    serviceworkers()
+    createDB(DB)
+    serviceworkers();
+    dayCurrent()
     initApp()
 })
