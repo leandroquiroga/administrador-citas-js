@@ -18,9 +18,11 @@ export class Ui {
     }
     //Muestra al usuario que es correcto la validacion
     validChck(input, sector) {
+        let p = create('p');
         if (input.classList.contains('error')) {
             input.classList.remove('error');
             sector.childNodes[5].classList.add('oculto')
+            p.textContent = '';
         }
     }
     citasVacias(result) {
