@@ -1,4 +1,4 @@
-# Administrador de Citas con IndexdDB   
+# Administrador de Citas con IndexdDB PWA
 Esta aplicación esta construida con la intención de simular un programa que controla citas personalizadas. Todas las citas se guardan en una Base de datos en este caso se uso IndexdDB que simula un CRUD basico. 
 
 # Dektop  🖥 
@@ -12,6 +12,10 @@ Esta aplicación esta construida con la intención de simular un programa que co
 * CSS3 
 * JavaScript
 * Bootstrap 
+* Moment.js
+* Parcel.js
+* Babel.js
+* Jest.js
 
 # Empaquetador  📦
 A este proyecto tiene un empaquetador, este caso parcel.
@@ -54,17 +58,20 @@ La eleccion de las fechas hay que tener en cuenta 2 puntos:
 Con los horarios pasa algo similar en este caso vamos a poder elegir en un rango entre las 09:00hs a 18:00hs con un intervalo de 1600 segundos.
 
 ## Deploy 👨‍💻
-[![Netlify Status](https://api.netlify.com/api/v1/badges/91bdc6d2-70d1-4734-947e-a9e15e487bd1/deploy-status)]https://administrarcitas.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91bdc6d2-70d1-4734-947e-a9e15e487bd1/deploy-status)]https://adminitracioncitas.netlify.app/)
 
 ## Posibles mejoras 🚀
-* Conectarlo a una base de datos real
 * Mensaje de confirmacion al editar una cita
 * Mejor responsive desing 
-* Hacer un refactor del codigo. 
+
 
 # Contacto 📫
 - [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
 - [Email](mailto:leandroquiroga9514@gmail.com)
+
+# New Update 💣
+* Se ha modificado para que sea una aplicacion PWA 
+* Se ha hechos test para la verificacion de datos que agregamos, editamos y eliminamos nuestras citas
 
 # Autor 👤
 Realizado con ❤️ por [Leandro Quiroga](https://github.com/leandroquiroga);
